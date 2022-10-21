@@ -1,0 +1,23 @@
+.section {
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgb(34 34 34 / 5%);
+  margin-bottom: 10px;
+}
+
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dedede;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .section__header {
+    flex-direction: column;
+  }
+}
+
+.section__title {
+  font-size: 20px;
+  margin: 0;
+}
