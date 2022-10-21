@@ -8,7 +8,7 @@ https://lkkolosowski.github.io/to-do-list-react/
 
 ## Preview
 
-![to do list preview](%PUBLIC_URL%/preview.png)
+![to do list preview](public/preview.png)
 
 ## Description
 
