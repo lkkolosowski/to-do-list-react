@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 https://lkkolosowski.github.io/to-do-list-react/
 
+## Preview
+
+![to do list preview](%PUBLIC_URL%/preview.png)
+
 ## Description
 
 Application makes it possible to add your tasks, mark them as done, or delete them. Enjoy! 😊
