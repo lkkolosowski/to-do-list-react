@@ -20,6 +20,9 @@ Application makes it possible to add your tasks, mark them as done, or delete th
 - JS Objects
 - JS Array
 - JS Immutability
+- Create React App
+- Babel
+- WebPack
 
 ## Available Scripts
 
