@@ -1,20 +1,23 @@
+import { Fragment } from "react";
 import "./style.css";
 
 const Buttons = ({ tasks, hideDoneTasks }) => (
-  tasks.length > 0 && (
-    <div className="buttons">
-      <button
+  <div className="buttons">
+    {tasks.length > 0 && (
+      <Fragment>
+        <button
         className="buttons__button">
-        {hideDoneTasks ? "Pokaż " : "Ukryj "}
-        ukończone
-      </button>
-      <button
+          {hideDoneTasks ? "Pokaż " : "Ukryj "}
+          ukończone
+        </button>
+        <button
         disabled={tasks.every(({ done }) => done)}
         className="buttons__button">
-        Ukończ wszystkie
-      </button>
-    </div>
-  )
+          Ukończ wszystkie
+        </button>
+      </Fragment>
+    )}
+  </div>
 );
 
 export default Buttons;
