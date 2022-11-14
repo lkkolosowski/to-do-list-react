@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/to-do-list-react/static/css/main.71ac45ae.css",
-    "main.js": "/to-do-list-react/static/js/main.13c217a6.js",
+    "main.css": "/to-do-list-react/static/css/main.5fba80f8.css",
+    "main.js": "/to-do-list-react/static/js/main.4b94de49.js",
     "static/js/787.d1b892bc.chunk.js": "/to-do-list-react/static/js/787.d1b892bc.chunk.js",
     "index.html": "/to-do-list-react/index.html",
-    "main.71ac45ae.css.map": "/to-do-list-react/static/css/main.71ac45ae.css.map",
-    "main.13c217a6.js.map": "/to-do-list-react/static/js/main.13c217a6.js.map",
+    "main.5fba80f8.css.map": "/to-do-list-react/static/css/main.5fba80f8.css.map",
+    "main.4b94de49.js.map": "/to-do-list-react/static/js/main.4b94de49.js.map",
     "787.d1b892bc.chunk.js.map": "/to-do-list-react/static/js/787.d1b892bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.71ac45ae.css",
-    "static/js/main.13c217a6.js"
+    "static/css/main.5fba80f8.css",
+    "static/js/main.4b94de49.js"
   ]
 }
