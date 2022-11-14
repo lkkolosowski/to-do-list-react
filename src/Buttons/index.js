@@ -1,27 +1,20 @@
 import { Fragment } from "react";
-import "./style.css";
+import { ButtonsGroup,  Button } from "./styled";
 
-const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone}) => (
-  <div className="buttons">
+const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
+  <ButtonsGroup>
     {tasks.length > 0 && (
       <Fragment>
-        <button
-          className="buttons__button"
-          onClick={toggleHideDone}
-        >
+        <Button onClick={toggleHideDone}>
           {hideDone ? "Pokaż " : "Ukryj "}
           ukończone
-        </button>
-        <button
-          disabled={tasks.every(({ done }) => done)}
-          className="buttons__button"
-          onClick={setAllDone}
-        >
+        </Button>
+        <Button disabled={tasks.every(({ done }) => done)} onClick={setAllDone}>
           Ukończ wszystkie
-        </button>
+        </Button>
       </Fragment>
     )}
-  </div>
+  </ButtonsGroup>
 );
 
 export default Buttons;
