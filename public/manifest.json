@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Lista zadań",
+  "name": "Lista zadań w React.js",
   "icons": [
     {
       "src": "icon.png",
