@@ -12,6 +12,7 @@ export const FormField = styled.form`
 `;
 
 export const Input = styled.input`
+  width: 100%;
   padding: 8px;
   border: 2px solid #eeedef;
 `;
