@@ -27,7 +27,6 @@ export const Button = styled.button`
 
   &:hover {
     background-color: #009999;
-    transform: scale(1.1);
   }
 
   &:active {
