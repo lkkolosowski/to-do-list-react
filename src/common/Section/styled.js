@@ -9,7 +9,7 @@ export const Wrapper = styled.section`
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid ${({ theme }) => theme.color.alto};
   padding: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
@@ -21,5 +21,3 @@ export const Title = styled.h2`
   font-size: 20px;
   margin: 0;
 `;
-
-export const Body = styled.div([]);
