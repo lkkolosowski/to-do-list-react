@@ -14,11 +14,13 @@ export const Item = styled.li`
   grid-gap: 10px;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid ${({ theme }) => theme.color.alto};
 
-  ${({ hidden }) => hidden && css`
-    display: none;
-  `};
+  ${({ hidden }) =>
+    hidden &&
+    css`
+      display: none;
+    `};
 `;
 
 export const Button = styled.button`
@@ -27,33 +29,35 @@ export const Button = styled.button`
   color: white;
   height: 30px;
   width: 30px;
-  background-color: #008000;
   cursor: pointer;
   transition-duration: 0.2s;
+  transition-property: background-color, filter;
 
-  &:hover {
-    background-color: #009900;
+  ${({ toggleDone }) =>
+    toggleDone &&
+    css`
+      background-color: ${({ theme }) => theme.color.forestGreen};
+    `}
+
+  ${({ remove }) =>
+    remove &&
+    css`
+      background-color: ${({ theme }) => theme.color.alizarinCrimson};
+    `}
+
+    &:hover {
+    filter: brightness(110%);
   }
 
   &:active {
-    background-color: #00b300;
+    filter: brightness(120%);
   }
-
-  ${({remove}) => remove && css`
-    background-color: #ff0000;
-
-    &:hover {
-      background-color: #ff4d4d;
-    }
-
-    &:active {
-      background-color: #ff8080;
-    }
-  `}
 `;
 
 export const Content = styled.span`
-  ${({ done }) => done && css`
-    text-decoration: line-through;
-  `};
+  ${({ done }) =>
+    done &&
+    css`
+      text-decoration: line-through;
+    `};
 `;

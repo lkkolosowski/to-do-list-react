@@ -6,7 +6,7 @@ export const FormField = styled.form`
   grid-gap: 20px;
   padding: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
     grid-template-columns: 1fr;
   }
 `;
@@ -14,22 +14,23 @@ export const FormField = styled.form`
 export const Input = styled.input`
   width: 100%;
   padding: 8px;
-  border: 2px solid #eeedef;
+  border: 2px solid ${({ theme }) => theme.color.athensGray};
 `;
 
 export const Button = styled.button`
-  color: #fff;
-  background-color: #008080;
+  color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.color.teal};
   border: 0;
   padding: 10px;
   cursor: pointer;
   transition-duration: 0.2s;
+  transition-property: background-color, filter;
 
   &:hover {
-    background-color: #009999;
+    filter: brightness(110%);
   }
 
   &:active {
-    background-color: #00b3b3;
+    filter: brightness(120%);
   }
 `;

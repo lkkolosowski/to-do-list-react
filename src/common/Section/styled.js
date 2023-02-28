@@ -12,7 +12,7 @@ export const Header = styled.header`
   border-bottom: 1px solid #dedede;
   padding: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
     flex-direction: column;
   }
 `;
