@@ -17,7 +17,11 @@ const Buttons = () => {
 
   return (
     <ButtonsGroup>
-      <Button onClick={() => dispatch(fetchExampleTasks())}>Pobierz przykładowe zadania</Button>
+      {!areTasksEmpty && (
+        <Button onClick={() => dispatch(fetchExampleTasks())}>
+          Pobierz przykładowe zadania
+        </Button>
+      )}
       {areTasksEmpty && (
         <>
           <Button onClick={() => dispatch(toggleHideDone())}>
