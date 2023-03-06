@@ -5,6 +5,12 @@ export const ButtonsGroup = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
     flex-direction: column;
+    margin-top: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid ${({ theme }) => theme.color.alto};
   }
 `;
 
