@@ -1,11 +1,11 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
   list-style-type: none;
-  padding: 20px;
+  padding-left: 0;
   margin: 0;
   word-break: break-word;
-  min-height: 63px;
 `;
 
 export const Item = styled.li`
@@ -45,7 +45,7 @@ export const Button = styled.button`
       background-color: ${({ theme }) => theme.color.alizarinCrimson};
     `}
 
-    &:hover {
+  &:hover {
     filter: brightness(110%);
   }
 
@@ -60,4 +60,20 @@ export const Content = styled.span`
     css`
       text-decoration: line-through;
     `};
+`;
+
+export const StyledLink = styled(Link)`
+  color: ${({ theme }) => theme.color.teal};
+  text-decoration: none;
+  transition-duration: 0.2s;
+  transition-property: filter;
+
+  &:hover {
+    filter: brightness(110%);
+    border-bottom: 1px solid ${({ theme }) => theme.color.teal};
+  }
+
+  &:active {
+    filter: brightness(120%);
+  }
 `;

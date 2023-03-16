@@ -4,17 +4,10 @@ export const FormField = styled.form`
   display: grid;
   grid-template-columns: 1fr auto;
   grid-gap: 20px;
-  padding: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     grid-template-columns: 1fr;
   }
-`;
-
-export const Input = styled.input`
-  width: 100%;
-  padding: 8px;
-  border: 2px solid ${({ theme }) => theme.color.athensGray};
 `;
 
 export const Button = styled.button`
