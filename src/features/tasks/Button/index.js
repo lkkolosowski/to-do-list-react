@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ButtonsGroup = styled.div`
   display: flex;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     flex-direction: column;
     margin-top: 20px;
     margin-left: -20px;
@@ -15,7 +15,8 @@ export const ButtonsGroup = styled.div`
 `;
 
 export const Button = styled.button`
-  padding: 0;
+  line-height: 1;
+  padding: 4px 0;
   margin: 0;
   border: 0;
   color: ${({ theme }) => theme.color.teal};
@@ -25,8 +26,9 @@ export const Button = styled.button`
   transition-property: color, filter;
   margin: 0 0 0 30px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     margin: 20px 0 0 0;
+    line-height: 1;
   }
 
   &:hover {
