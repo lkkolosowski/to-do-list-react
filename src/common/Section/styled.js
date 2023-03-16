@@ -12,7 +12,7 @@ export const Header = styled.header`
   border-bottom: 1px solid ${({ theme }) => theme.color.alto};
   padding: 20px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     flex-direction: column;
   }
 `;
@@ -20,4 +20,5 @@ export const Header = styled.header`
 export const Title = styled.h2`
   font-size: 20px;
   margin: 0;
+  padding: 2px 0;
 `;
