@@ -1,19 +1,19 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-export const Navbar = styled.ul`
+export const StyledNavigation = styled.ul`
   display: flex;
   justify-content: center;
   background-color: ${({ theme }) => theme.color.teal};
-  margin-left: -15px;
-  padding: 20px;
-  width: 100%;
-  border-bottom: 1px solid ${({theme}) => theme.color.alto};
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid ${({ theme }) => theme.color.alto};
+  box-shadow: 0 2px 6px rgba(186, 199, 213, 0.5);
 `;
 
 export const NavbarItem = styled.li`
   list-style-type: none;
-  margin-left: 15px;
+  margin: 20px;
   padding: 4px 0;
 `;
 
@@ -34,5 +34,6 @@ export const StyledNavLink = styled(NavLink)`
 
   &.active {
     font-weight: bold;
+    border-bottom: 1px solid ${({ theme }) => theme.color.white};
   }
 `;
