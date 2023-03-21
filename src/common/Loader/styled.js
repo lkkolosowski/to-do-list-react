@@ -1,10 +1,26 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const medium = ({ theme }) => theme.size.medium;
 
+export const Wrapper = styled.div`
+  ${({ mobileCentered }) =>
+    mobileCentered &&
+    css`
+      display: flex;
+    `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    ${({ mobileCentered }) =>
+    mobileCentered &&
+    css`
+      justify-content: center;
+    `}
+  }
+`;
+
 export const StyledLoader = styled.div`
   position: relative;
-  border: 3px solid ${({ theme }) => theme.color.concrete};
+  border: 3px solid transparent;
   border-radius: 50%;
   border-top: 3px solid ${({ theme }) => theme.color.mineShaft};
   top: 4px;
@@ -21,10 +37,5 @@ export const StyledLoader = styled.div`
     100% {
       transform: rotate(360deg);
     }
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    margin-left: auto;
-    margin-right: auto;
   }
 `;

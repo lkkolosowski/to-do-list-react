@@ -1,7 +1,11 @@
-import { StyledLoader } from "./styled";
+import { Wrapper, StyledLoader } from "./styled";
 
 const Loader = () => {
-  return <StyledLoader />;
+  return (
+    <Wrapper mobileCentered>
+      <StyledLoader />
+    </Wrapper>
+  );
 };
 
 export default Loader;
