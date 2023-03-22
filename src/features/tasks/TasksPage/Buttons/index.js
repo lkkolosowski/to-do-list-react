@@ -17,6 +17,7 @@ const Buttons = () => {
   return (
     <ButtonsGroup>
       <Button
+        active={hideDone}
         disabled={!areTasksNotEmpty}
         onClick={() => dispatch(toggleHideDone())}
       >

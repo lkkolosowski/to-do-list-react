@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   background-color: #fff;
-  box-shadow: 0 1px 2px 0 rgb(34 34 34 / 5%);
+  box-shadow: 0 2px 6px rgba(186, 199, 213, 0.5);
   margin-bottom: 10px;
 `;
 

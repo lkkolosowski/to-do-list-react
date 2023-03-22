@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const ButtonsGroup = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ export const Button = styled.button`
   background-color: transparent;
   cursor: pointer;
   transition-duration: 0.2s;
-  transition-property: color, filter;
+  transition-property: color, filter, text-shadow;
   margin: 0 0 0 30px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
@@ -43,4 +43,11 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.color.alto};
     pointer-events: none;
   }
+
+  ${({ active }) =>
+    active &&
+    css`
+      text-shadow: ${({ theme }) => theme.color.forestGreen} 0 0 16px;
+      text-decoration: underline;
+    `};
 `;
