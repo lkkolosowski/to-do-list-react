@@ -1,6 +1,7 @@
 import Container from "../../../common/Container";
 import Header from "../../../common/Header";
 import Section from "../../../common/Section";
+import image from "../../../images/image.jpg";
 import { ImageWrapper, Image, Paragraph } from "./styled";
 
 function AuthorPage() {
@@ -14,7 +15,7 @@ function AuthorPage() {
             <ImageWrapper>
               <Image
                 rounded
-                src={process.env.PUBLIC_URL + "/image.jpg"}
+                src={image}
                 alt="Łukasz"
                 width="300"
               />
