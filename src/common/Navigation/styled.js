@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-export const StyledNavigation = styled.ul`
+export const List = styled.ul`
   display: flex;
   justify-content: center;
   background-color: ${({ theme }) => theme.color.teal};
@@ -11,7 +11,7 @@ export const StyledNavigation = styled.ul`
   box-shadow: 0 2px 6px rgba(186, 199, 213, 0.5);
 `;
 
-export const NavbarItem = styled.li`
+export const Item = styled.li`
   list-style-type: none;
   margin: 20px;
   padding: 4px 0;
