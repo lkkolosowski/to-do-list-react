@@ -48,6 +48,5 @@ export const Button = styled.button`
     active &&
     css`
       text-shadow: ${({ theme }) => theme.color.forestGreen} 0 0 16px;
-      text-decoration: underline;
     `};
 `;
