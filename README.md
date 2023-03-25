@@ -8,7 +8,7 @@ https://lkkolosowski.github.io/to-do-list-react/
 
 ## Preview
 
-![to do list preview](public/preview.png)
+![to do list preview](preview.gif)
 
 ## Description
 
@@ -16,18 +16,34 @@ Application makes it possible to add your tasks, mark them as done, or delete th
 
 ## Technologies
 
+### Basics
 - Semantic HTML
-- BEM
 - normalize.css
 - CSS Flex
 - CSS Grid
 - JS Objects
 - JS Array
-- JS Immutability
-- Create React App
+- Immutability
+
+### Useful Libraries
 - Babel
 - WebPack
+- styled-components
 
+### React
+- Create React App
+- useState, useEffect, useRef
+- Custom Hooks
+- React-Redux
+
+### Redux
+- Redux-Saga
+- Redux-Router
+- Redux-Toolkit
+
+### Advanced
+- localStorage
+- Generator function*
 ## Available Scripts
 
 In the project directory, you can run:
