@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
+const alto = ({ theme }) => theme.color.alto;
+
 export const List = styled.ul`
   list-style-type: none;
   padding-left: 0;
@@ -14,13 +16,52 @@ export const Item = styled.li`
   grid-gap: 10px;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid ${({ theme }) => theme.color.alto};
+  border-bottom: 1px solid ${alto};
+  animation: show 0.1s ease-in forwards;
+  overflow: hidden;
 
   ${({ hidden }) =>
     hidden &&
     css`
-      display: none;
+      animation: hide 0.1s ease-out forwards;
+      overflow: hidden;
     `};
+
+  @keyframes hide {
+    0% {
+      opacity: 1;
+      max-height: 204px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid ${alto};
+    }
+
+    100% {
+      opacity: 0;
+      max-height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      border-bottom: 0px solid ${alto};
+    }
+  }
+
+  @keyframes show {
+    0% {
+      opacity: 0;
+      max-height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      border-bottom: 0px solid ${alto};
+    }
+
+    100% {
+      opacity: 1;
+      max-height: 204px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid ${alto};
+    }
+  }
 `;
 
 export const Button = styled.button`
