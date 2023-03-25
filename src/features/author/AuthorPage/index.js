@@ -14,10 +14,9 @@ function AuthorPage() {
           <>
             <ImageWrapper>
               <Image
-                rounded
+                profile
                 src={image}
                 alt="Łukasz"
-                width="300"
               />
             </ImageWrapper>
             <Paragraph>
