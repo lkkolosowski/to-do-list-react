@@ -25,6 +25,7 @@ const Form = () => {
         content: trimmedNewTaskContent,
         done: false,
         id: nanoid(),
+        hiddenByQuery: false,
       })
     );
 
