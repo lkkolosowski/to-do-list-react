@@ -6,10 +6,12 @@ export const ImageWrapper = styled.p`
 `;
 
 export const Image = styled.img`
-  ${({ rounded }) =>
-    rounded &&
+  width: 100%;
+  ${({ profile }) =>
+    profile &&
     css`
       border-radius: 50%;
+      max-width: 300px;
     `}
 `;
 
