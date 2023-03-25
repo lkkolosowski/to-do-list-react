@@ -12,9 +12,9 @@ import { List, Item, Button, Content, StyledLink } from "./styled";
 
 const TaskList = () => {
   const query = useQueryParameter(searchQueryParamName);
-
   const tasks = useSelector((state) => selectTasksByQuery(state, query));
   const hideDone = useSelector(selectHideDone);
+
   const dispatch = useDispatch();
 
   return (
