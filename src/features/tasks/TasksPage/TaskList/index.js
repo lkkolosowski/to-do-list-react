@@ -26,9 +26,6 @@ const TaskList = () => {
         <Item
           key={task.id}
           hidden={task.done && hideDone}
-          className={`tasks__item 
-          ${task.done ? "tasks__item--done" : ""} 
-          ${task.done && hideDone ? "tasks__item--hidden" : ""}`}
         >
           <Button
             toggleDone
