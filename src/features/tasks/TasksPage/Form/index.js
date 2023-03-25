@@ -40,6 +40,7 @@ const Form = () => {
         placeholder="Co jest do zrobienia?"
         onChange={({ target }) => setNewTaskContent(target.value)}
         ref={inputRef}
+        maxLength={225}
       />
       <Button>Dodaj zadanie</Button>
     </FormField>
