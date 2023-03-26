@@ -2,16 +2,19 @@
   {
     "content": "Wstać rano",
     "done": true,
-    "id": "JKMllB6E6Qcc8bn8Z3G4K"
+    "id": "JKMllB6E6Qcc8bn8Z3G4K",
+    "hiddenByQuery": false
   },
   {
     "content": "Napić się wody",
     "done": false,
-    "id": "qgc9NHCGET5GckHY3nmWf"
+    "id": "qgc9NHCGET5GckHY3nmWf",
+    "hiddenByQuery": false
   },
   {
     "content": "Podlać kwiaty",
     "done": false,
-    "id": "ZxgBGFeV6IsD8WwOVwJJE"
+    "id": "ZxgBGFeV6IsD8WwOVwJJE",
+    "hiddenByQuery": false
   }
 ]
