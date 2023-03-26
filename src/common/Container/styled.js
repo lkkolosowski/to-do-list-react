@@ -6,7 +6,7 @@ export const Main = styled.main`
   padding-top: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    padding: 0 10px;
+    padding: 20px 10px 0;
   }
 
   ${({ trimmed }) =>
