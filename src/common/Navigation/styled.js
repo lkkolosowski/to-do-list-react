@@ -24,15 +24,18 @@ export const Image = styled.img`
   border-radius: 50%;
   width: 44px;
   padding: 10px 0;
+  margin-left: 0;
+  margin-right: 10px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     margin-left: 10px;
+    margin-right: 0;
   }
 `;
 
 export const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 54px auto 54px;
   justify-content: space-between;
   align-items: center;
 
