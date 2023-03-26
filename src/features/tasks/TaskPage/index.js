@@ -2,8 +2,9 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import { useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
+import { useSelector } from "react-redux";
+import BackButton from "../TasksPage/BackButton";
 
 function TaskPage() {
   const { id } = useParams();
@@ -21,6 +22,7 @@ function TaskPage() {
             </>
           )
         }
+        extraHeaderContent={<BackButton />}
       />
     </Container>
   );
