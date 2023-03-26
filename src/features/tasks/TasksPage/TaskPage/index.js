@@ -5,26 +5,30 @@ import { useParams } from "react-router-dom";
 import { getTaskById } from "../../tasksSlice";
 import { useSelector } from "react-redux";
 import BackButton from "../BackButton";
+import Footer from "../../../../common/Footer";
 
 function TaskPage() {
   const { id } = useParams();
   const task = useSelector((state) => getTaskById(state, id));
 
   return (
-    <Container>
-      <Header title="Szczegóły zadania" />
-      <Section
-        title={task ? task.content : "Nie znaleziono zadania"}
-        body={
-          !!task && (
-            <>
-              <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
-            </>
-          )
-        }
-        extraHeaderContent={<BackButton />}
-      />
-    </Container>
+    <>
+      <Container>
+        <Header title="Szczegóły zadania" />
+        <Section
+          title={task ? task.content : "Nie znaleziono zadania"}
+          body={
+            !!task && (
+              <>
+                <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
+              </>
+            )
+          }
+          extraHeaderContent={<BackButton />}
+        />
+      </Container>
+      <Footer />
+    </>
   );
 }
 
