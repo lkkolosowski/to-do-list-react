@@ -75,17 +75,14 @@ export const selectTasksByQuery = (state, query) => {
     return tasks;
   }
 
-  return tasks.map((task) =>
-    task.content.toUpperCase().includes(query.trim().toUpperCase())
-      ? {
-          ...task,
-          hiddenByQuery: false,
-        }
-      : {
-          ...task,
-          hiddenByQuery: true,
-        }
-  );
+  return tasks.map((task) => ({
+    ...task,
+    hiddenByQuery: !task.content
+      .toUpperCase()
+      .includes(query.trim().toUpperCase())
+      ? true
+      : false,
+  }));
 };
 
 export default tasksSlice.reducer;
