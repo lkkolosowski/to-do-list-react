@@ -25,7 +25,7 @@ function AuthorPage() {
             <Paragraph>
               Jeżdżę dużo na rowerze. Lubię podziwiać widoczki (góry, lasy,
               morze). Interesuję się programowaniem, muzyką{" "}
-              <strong>*</strong>, oraz lubię sobie też czasem na siłkę
+              <strong>*</strong> oraz lubię sobie też czasem na siłkę
               pochodzić.
             </Paragraph>
             <Paragraph>

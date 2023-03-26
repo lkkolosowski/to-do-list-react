@@ -30,7 +30,7 @@ export const Item = styled.li`
   @keyframes hide {
     0% {
       opacity: 1;
-      max-height: 245px;
+      max-height: 51px;
       padding-top: 10px;
       padding-bottom: 10px;
       border-bottom: 1px solid ${alto};

@@ -19,7 +19,7 @@ export const Header = styled.header`
 
 export const Body = styled.div`
   padding: 20px;
-  min-height: 65px;
+  min-height: 56px;
 `;
 
 export const Title = styled.h2`
