@@ -4,17 +4,47 @@ import { NavLink } from "react-router-dom";
 export const List = styled.ul`
   display: flex;
   justify-content: center;
-  background-color: ${({ theme }) => theme.color.teal};
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid ${({ theme }) => theme.color.alto};
-  box-shadow: 0 2px 6px rgba(186, 199, 213, 0.5);
 `;
 
 export const Item = styled.li`
   list-style-type: none;
   margin: 20px;
   padding: 4px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    margin: 10px 20px;
+  }
+`;
+
+export const Image = styled.img`
+  display: block;
+  border-radius: 50%;
+  width: 44px;
+  padding: 10px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    margin-left: 10px;
+  }
+`;
+
+export const Wrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    grid-template-columns: auto auto;
+  }
+`;
+
+export const Nav = styled.nav`
+  background-color: ${({ theme }) => theme.color.teal};
+  border-bottom: 1px solid ${({ theme }) => theme.color.alto};
+  box-shadow: 0 2px 6px rgba(186, 199, 213, 0.5);
 `;
 
 export const StyledNavLink = styled(NavLink)`

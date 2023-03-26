@@ -1,18 +1,28 @@
 import { toAuthor, toTasks } from "../../routes";
-import { List, Item, StyledNavLink } from "./styled";
+import Container from "../Container";
+import image from "../../images/image.jpg";
+import { NavLink } from "react-router-dom";
+import { List, Item, Wrapper, Image, Nav, StyledNavLink } from "./styled";
 
 const Navigation = () => {
   return (
-    <nav>
-      <List>
-        <Item>
-          <StyledNavLink to={toTasks()}>Zadania</StyledNavLink>
-        </Item>
-        <Item>
-          <StyledNavLink to={toAuthor()}>O autorze</StyledNavLink>
-        </Item>
-      </List>
-    </nav>
+    <Nav>
+      <Container trimmed>
+        <Wrapper>
+          <NavLink to={toAuthor()}>
+            <Image src={image} alt="Łukasz" />
+          </NavLink>
+          <List>
+            <Item>
+              <StyledNavLink to={toTasks()}>Zadania</StyledNavLink>
+            </Item>
+            <Item>
+              <StyledNavLink to={toAuthor()}>O autorze</StyledNavLink>
+            </Item>
+          </List>
+        </Wrapper>
+      </Container>
+    </Nav>
   );
 };
 
