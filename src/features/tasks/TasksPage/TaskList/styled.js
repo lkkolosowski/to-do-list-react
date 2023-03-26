@@ -17,14 +17,14 @@ export const Item = styled.li`
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid ${alto};
-  animation: show 0.1s ease-in forwards;
   overflow: hidden;
 
   ${({ hidden }) =>
     hidden &&
     css`
-      animation: hide 0.1s ease-out forwards;
+      animation: hide 0.2s ease forwards;
       overflow: hidden;
+      animation-delay: 0.4s;
     `};
 
   @keyframes hide {
@@ -42,24 +42,6 @@ export const Item = styled.li`
       padding-top: 0;
       padding-bottom: 0;
       border-bottom: 0px solid ${alto};
-    }
-  }
-
-  @keyframes show {
-    0% {
-      opacity: 0;
-      max-height: 0;
-      padding-top: 0;
-      padding-bottom: 0;
-      border-bottom: 0px solid ${alto};
-    }
-
-    100% {
-      opacity: 1;
-      max-height: 245px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid ${alto};
     }
   }
 `;
