@@ -14,7 +14,7 @@ function AuthorPage() {
           <>
             <ImageWrapper>
               <Image
-                profile
+                avatar
                 src={image}
                 alt="Łukasz"
               />

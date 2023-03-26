@@ -7,8 +7,8 @@ export const ImageWrapper = styled.p`
 
 export const Image = styled.img`
   width: 100%;
-  ${({ profile }) =>
-    profile &&
+  ${({ avatar }) =>
+    avatar &&
     css`
       border-radius: 50%;
       max-width: 300px;
