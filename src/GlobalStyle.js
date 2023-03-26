@@ -17,5 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.color.mineShaft};
     background-color: ${({ theme }) => theme.color.gallery};
     font-size: ${({ theme }) => theme.size.medium}px;
+    overflow-y: scroll;
   }
 `;
