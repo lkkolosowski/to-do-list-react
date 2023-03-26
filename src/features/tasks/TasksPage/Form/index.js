@@ -38,7 +38,7 @@ const Form = () => {
       <Input
         autoFocus
         value={newTaskContent}
-        placeholder="Co jest do zrobienia?"
+        placeholder="Co masz do zrobienia?"
         onChange={({ target }) => setNewTaskContent(target.value)}
         ref={inputRef}
         maxLength={225}
