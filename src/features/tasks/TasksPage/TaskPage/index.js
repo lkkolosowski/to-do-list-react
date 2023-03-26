@@ -1,10 +1,10 @@
-import Section from "../../../common/Section";
-import Header from "../../../common/Header";
-import Container from "../../../common/Container";
+import Section from "../../../../common/Section";
+import Header from "../../../../common/Header";
+import Container from "../../../../common/Container";
 import { useParams } from "react-router-dom";
-import { getTaskById } from "../tasksSlice";
+import { getTaskById } from "../../tasksSlice";
 import { useSelector } from "react-redux";
-import BackButton from "../TasksPage/BackButton";
+import BackButton from "../BackButton";
 
 function TaskPage() {
   const { id } = useParams();

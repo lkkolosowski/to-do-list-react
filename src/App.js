@@ -2,7 +2,7 @@ import React from "react";
 import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import { toAuthor, toTask, toTasks } from "./routes";
 import AuthorPage from "./features/author/AuthorPage";
-import TaskPage from "./features/tasks/TaskPage";
+import TaskPage from "./features/tasks/TasksPage/TaskPage";
 import TasksPage from "./features/tasks/TasksPage";
 import Navigation from "./common/Navigation";
 
