@@ -17,7 +17,6 @@ import {
   fetchExampleTasksError,
   selectTasks,
   selectHideDone,
-  toggleHideDone,
 } from "./tasksSlice";
 
 function* fetchExampleTasksHandler() {
@@ -43,6 +42,6 @@ function* saveHideDoneToLocaleStorageHandler() {
 
 export function* tasksSaga() {
   yield takeLatest(fetchExampleTasks.type, fetchExampleTasksHandler);
-  yield takeEvery(toggleHideDone.type, saveHideDoneToLocaleStorageHandler);
   yield takeEvery("*", saveTasksInLocalStorageHandler);
+  yield takeEvery("*", saveHideDoneToLocaleStorageHandler);
 }
