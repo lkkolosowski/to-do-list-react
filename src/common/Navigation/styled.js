@@ -15,7 +15,7 @@ export const Item = styled.li`
   padding: 4px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    margin: 10px;
+    margin: 10px 20px;
   }
 `;
 
