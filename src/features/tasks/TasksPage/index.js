@@ -11,7 +11,7 @@ import Search from "./Search";
 function TasksPage() {
   return (
     <>
-      <Container>
+      <Container page tasks>
         <Header title="Lista zadań" />
         <Section
           title="Dodaj nowe zadanie"

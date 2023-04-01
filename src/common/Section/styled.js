@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
   margin-bottom: 10px;
 `;
 
-export const Header = styled.header`
+export const Header = styled.div`
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid ${({ theme }) => theme.color.alto};

@@ -14,4 +14,46 @@ export const Main = styled.main`
         padding: 0;
       }
     `};
+
+  ${({ page }) =>
+    page &&
+    css`
+      min-height: calc(100vh - 133px);
+    `};
+
+  ${({ tasks }) =>
+    tasks &&
+    css`
+      animation: revealFromLeft 0.4s ease forwards;
+    `};
+
+  ${({ author }) =>
+    author &&
+    css`
+      animation: revealFromRight 0.4s ease forwards;
+    `};
+
+  @keyframes revealFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes revealFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 `;

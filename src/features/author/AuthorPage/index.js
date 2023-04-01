@@ -8,7 +8,7 @@ import { ImageWrapper, Image, Paragraph } from "./styled";
 function AuthorPage() {
   return (
     <>
-      <Container>
+      <Container page author>
         <Header title="O autorze" />
         <Section
           title="Łukasz Kołosowski"

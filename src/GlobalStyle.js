@@ -18,5 +18,6 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${({ theme }) => theme.color.gallery};
     font-size: ${({ theme }) => theme.size.medium}px;
     overflow-y: scroll;
+    overflow-x: hidden;
   }
 `;
