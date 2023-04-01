@@ -4,12 +4,14 @@ export const GlobalStyle = createGlobalStyle`
   html {
     line-height: 1;
     box-sizing: border-box;
+    overflow: auto;
   }
 
   *,
   ::after,
   ::before {
     box-sizing: inherit;
+    overflow: hidden;
   }
 
   .body {

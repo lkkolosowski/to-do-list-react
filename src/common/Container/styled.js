@@ -18,7 +18,7 @@ export const Main = styled.main`
   ${({ page }) =>
     page &&
     css`
-      min-height: calc(100vh - 133px);
+      min-height: calc(100vh - 113px);
     `};
 
   ${({ tasks }) =>
