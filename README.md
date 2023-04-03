@@ -12,7 +12,7 @@ https://lkkolosowski.github.io/to-do-list-react/
 
 ## Description
 
-Application makes it possible to add your tasks, mark them as done, or delete them. Enjoy! 😊
+Here is your to-do list that you can create in this application if you feel like it 😁 You can add individual tasks, delete them, or hide completed ones. The list is saved to local memory, so you won't miss anything!
 
 ## Technologies
 
