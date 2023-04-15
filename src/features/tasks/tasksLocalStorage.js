@@ -1,5 +1,5 @@
-const localStorageTasksKey = "tasks#0004";
-const localStorageHideDoneKey = "hideDone#0004";
+const localStorageTasksKey = "tasks";
+const localStorageHideDoneKey = "hideDone";
 
 export const saveTasksInLocalStorage = (tasks) =>
   localStorage.setItem(localStorageTasksKey, JSON.stringify(tasks));
