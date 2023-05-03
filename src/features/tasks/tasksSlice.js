@@ -17,6 +17,9 @@ const tasksSlice = createSlice({
     toggleHideDone: (state) => {
       state.hideDone = !state.hideDone;
     },
+    showDone: (state) => {
+      state.hideDone = false;
+    },
     toggleTaskDone: ({ tasks }, { payload: taskId }) => {
       const index = tasks.findIndex(({ id }) => id === taskId);
       tasks[index].done = !tasks[index].done;
@@ -47,6 +50,7 @@ export const {
   addTask,
   toggleHideDone,
   toggleTaskDone,
+  showDone,
   removeTask,
   setAllDone,
   fetchExampleTasks,
