@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 
 export const ButtonsGroup = styled.div`
   display: flex;
+  align-items: flex-start;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     flex-direction: column;
