@@ -4,7 +4,7 @@ import Container from "../../../../common/Container";
 import { useParams } from "react-router-dom";
 import { getTaskById } from "../../tasksSlice";
 import { useSelector } from "react-redux";
-import BackButton from "../BackButton";
+import BackButton from "../Buttons/BackButton";
 import Footer from "../../../../common/Footer";
 
 function TaskPage() {

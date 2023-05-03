@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
-import { fetchExampleTasks, selectAreTasksNotEmpty, selectLoading } from "../../tasksSlice";
+import { fetchExampleTasks, selectAreTasksNotEmpty, selectLoading } from "../../../tasksSlice";
 import { Button, ButtonsGroup } from "../Button";
-import Loader from "../../../../common/Loader";
+import Loader from "../../../../../common/Loader";
 
 const FetchExampleTasksButton = () => {
   const isLoading = useSelector(selectLoading);
