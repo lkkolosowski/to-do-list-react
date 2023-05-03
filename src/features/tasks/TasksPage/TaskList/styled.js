@@ -69,33 +69,54 @@ export const Button = styled.button`
     `}
 
   &:hover {
-    filter: brightness(110%);
+    filter: brightness(120%);
   }
 
   &:active {
-    filter: brightness(120%);
+    filter: brightness(14%);
   }
 `;
 
 export const Content = styled.span`
-  ${({ done }) =>
-    done &&
-    css`
-      text-decoration: line-through;
-    `};
+  text-align: justify;
 `;
 
 export const StyledLink = styled(Link)`
+  display: inline-block;
+  position: relative;
   color: ${({ theme }) => theme.color.teal};
   text-decoration: none;
   transition-duration: 0.2s;
   transition-property: filter;
+  overflow: hidden;
+
+  &:before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: repeating-linear-gradient(
+      transparent,
+      transparent 7.5px,
+      black 7.5px,
+      black 8.5px,
+      transparent 8.5px,
+      transparent 16px
+    );
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-out;
+
+    ${({ done }) =>
+      done &&
+      css`
+        transform: translateX(0);
+      `};
+  }
 
   &:hover {
-    filter: brightness(110%);
+    filter: brightness(120%);
   }
 
   &:active {
-    filter: brightness(120%);
+    filter: brightness(140%);
   }
 `;

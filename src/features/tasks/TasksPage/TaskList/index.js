@@ -30,8 +30,8 @@ const TaskList = () => {
           >
             {task.done ? "✓" : ""}
           </Button>
-          <Content done={task.done}>
-            <StyledLink to={toTask({ id: task.id })}>
+          <Content>
+            <StyledLink done={task.done} to={toTask({ id: task.id })}>
               {task.content}
             </StyledLink>
           </Content>
