@@ -28,7 +28,7 @@ function AuthorPage() {
               </Paragraph>
               <Paragraph>
                 <strong>*</strong> Ostatnio lubię suchać: <br />
-                Techno⚡Deep House⚡Future House⚡DnB
+                Techno⚡Deep House⚡Hardstyle⚡Future House⚡DnB
               </Paragraph>
             </>
           }
