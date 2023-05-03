@@ -9,8 +9,7 @@ export const ButtonsGroup = styled.div`
     margin-top: 20px;
     margin-left: -20px;
     margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
     border-top: 1px solid ${({ theme }) => theme.color.alto};
   }
 `;
