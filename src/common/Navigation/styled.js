@@ -55,12 +55,12 @@ export const StyledNavLink = styled(NavLink)`
   transition-property: filter;
 
   &:hover {
-    filter: brightness(110%);
+    filter: brightness(120%);
     border-bottom: 1px solid ${({ theme }) => theme.color.white};
   }
 
   &:active {
-    filter: brightness(120%);
+    filter: brightness(140%);
   }
 
   &.active {

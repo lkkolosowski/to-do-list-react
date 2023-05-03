@@ -73,7 +73,7 @@ export const Button = styled.button`
   }
 
   &:active {
-    filter: brightness(14%);
+    filter: brightness(140%);
   }
 `;
 

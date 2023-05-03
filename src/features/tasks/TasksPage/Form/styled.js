@@ -20,10 +20,10 @@ export const Button = styled.button`
   transition-property: background-color, filter;
 
   &:hover {
-    filter: brightness(110%);
+    filter: brightness(120%);
   }
 
   &:active {
-    filter: brightness(120%);
+    filter: brightness(140%);
   }
 `;
