@@ -7,7 +7,7 @@ const BackButton = () => {
   return (
     <ButtonsGroup>
       <Button>
-        <StyledLink to={toTasks()}>Wstecz ↩️</StyledLink>
+        <StyledLink to={toTasks()}>Wstecz ↩</StyledLink>
       </Button>
     </ButtonsGroup>
   );
