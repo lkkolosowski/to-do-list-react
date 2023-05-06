@@ -13,7 +13,7 @@ function TaskPage() {
 
   return (
     <>
-      <Container>
+      <Container page tasks>
         <Header title="Szczegóły zadania" />
         <Section
           title={task ? task.content : "Nie znaleziono zadania"}
