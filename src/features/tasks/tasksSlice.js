@@ -64,8 +64,7 @@ const selectTasksState = (state) => state.tasks;
 export const selectTasks = (state) => selectTasksState(state).tasks;
 export const selectLoading = (state) => selectTasksState(state).loading;
 export const selectHideDone = (state) => selectTasksState(state).hideDone;
-export const selectAreTasksNotEmpty = (state) =>
-  selectTasks(state).length > 0;
+export const selectAreTasksNotEmpty = (state) => selectTasks(state).length > 0;
 export const selectIsEveryTaskDone = (state) =>
   selectTasks(state).every(({ done }) => done);
 
@@ -83,9 +82,7 @@ export const selectTasksByQuery = (state, query) => {
     ...task,
     hiddenByQuery: !task.content
       .toUpperCase()
-      .includes(query.trim().toUpperCase())
-      ? true
-      : false,
+      .includes(query.trim().toUpperCase()),
   }));
 };
 
