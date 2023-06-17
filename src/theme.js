@@ -4,7 +4,7 @@ export const theme = {
     concrete: "#f3f3f3",
     mineShaft: "#222",
     gallery: "#eee",
-    teal: "#008080",
+    royalBlue: "#1B3FAB",
     alto: "#d3d3d3",
     athensGray: "#eeedef",
     forestGreen: "#008000",
@@ -16,5 +16,6 @@ export const theme = {
   },
   breakpoint: {
     mobileMax: 767,
+    tabletMax: 1000,
   },
 };
