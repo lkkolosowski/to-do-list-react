@@ -7,15 +7,8 @@ export const Wrapper = styled.div`
     mobileCentered &&
     css`
       display: flex;
-    `}
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    ${({ mobileCentered }) =>
-    mobileCentered &&
-    css`
       justify-content: center;
     `}
-  }
 `;
 
 export const StyledLoader = styled.div`
