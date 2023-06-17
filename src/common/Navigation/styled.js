@@ -43,7 +43,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Nav = styled.nav`
-  background-color: ${({ theme }) => theme.color.teal};
+  background-color: ${({ theme }) => theme.color.royalBlue};
   border-bottom: 1px solid ${({ theme }) => theme.color.alto};
   box-shadow: 0 2px 6px rgba(186, 199, 213, 0.5);
 `;
