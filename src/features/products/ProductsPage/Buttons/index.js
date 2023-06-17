@@ -1,7 +1,9 @@
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   selectHideDone,
   toggleHideDone,
+  showDone,
   setAllDone,
   selectIsEveryTaskDone,
   selectAreTasksNotEmpty,
@@ -13,6 +15,12 @@ const Buttons = () => {
   const areTasksNotEmpty = useSelector(selectAreTasksNotEmpty);
   const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (!areTasksNotEmpty) {
+      dispatch(showDone());
+    }
+  }, [areTasksNotEmpty, dispatch]);
 
   return (
     <ButtonsGroup>
