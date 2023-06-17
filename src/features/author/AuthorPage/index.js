@@ -9,7 +9,7 @@ function AuthorPage() {
   return (
     <>
       <Container page author>
-        <Header title="O autorze" />
+        <Header title="About author" />
         <Section
           title="Łukasz Kołosowski"
           body={
@@ -17,18 +17,15 @@ function AuthorPage() {
               <ImageWrapper>
                 <Image avatar src={image} alt="Łukasz" />
               </ImageWrapper>
+              <Paragraph>Hi! 👋🏼 My name is Łukasz, I'm from Wrocław.</Paragraph>
               <Paragraph>
-                Cześć! Nazywam się Łukasz, jestem z Wrocławia.
-              </Paragraph>
-              <Paragraph>
-                Jeżdżę dużo na rowerze. Lubię podziwiać widoczki (góry,
-                lasy, morze). Interesuję się programowaniem, muzyką{" "}
-                <strong>*</strong> oraz lubię sobie też czasem na siłkę
-                pochodzić.
-              </Paragraph>
-              <Paragraph>
-                <strong>*</strong> Ostatnio lubię suchać: <br />
-                Techno⚡Deep House⚡Future House⚡DnB
+                I ride a bike a lot 🚴.
+                <br />
+                I like to admire the views (mountains 🌄, forests 🛤️, sea 🌅).
+                <br />
+                I am interested in programming 💻, cooking 🍳🍴,
+                <br />
+                and I also like to go to the gym sometimes 💪 :)
               </Paragraph>
             </>
           }
