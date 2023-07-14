@@ -1,8 +1,9 @@
 import React from "react";
 import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
-import { toAuthor, toProducts } from "./routes";
+import { toAuthor, toTask, toTasks } from "./routes";
 import AuthorPage from "./features/author/AuthorPage";
-import ProductsPage from "./features/products/ProductsPage";
+import TaskPage from "./features/tasks/TasksPage/TaskPage";
+import TasksPage from "./features/tasks/TasksPage";
 import Navigation from "./common/Navigation";
 
 function App() {
@@ -10,14 +11,17 @@ function App() {
     <HashRouter>
       <Navigation />
       <Switch>
-        <Route path={toProducts()}>
-          <ProductsPage />
+        <Route path={toTask()}>
+          <TaskPage />
+        </Route>
+        <Route path={toTasks()}>
+          <TasksPage />
         </Route>
         <Route path={toAuthor()}>
           <AuthorPage />
         </Route>
         <Route path="/">
-          <Redirect to={toProducts()} />
+          <Redirect to={toTasks()} />
         </Route>
       </Switch>
     </HashRouter>

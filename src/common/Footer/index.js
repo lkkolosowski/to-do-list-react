@@ -1,10 +1,8 @@
-import { StyledFooter, StyledHeart } from "./styled";
+import { Heart, Paragraph, StyledFooter } from "./styled";
 
 const Footer = () => (
   <StyledFooter>
-    <p>
-      2023 Made with <StyledHeart /> by Łukasz Kołosowski
-    </p>
+    <Paragraph>2023 Made with <Heart /> by Łukasz Kołosowski</Paragraph>
   </StyledFooter>
 );
 

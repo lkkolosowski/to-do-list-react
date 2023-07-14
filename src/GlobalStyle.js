@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import background from "./images/background.jpg";
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -16,12 +15,7 @@ export const GlobalStyle = createGlobalStyle`
   .body {
     font-family: "Montserrat", sans-serif;
     color: ${({ theme }) => theme.color.mineShaft};
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(${background});
-    background-size: 100%;
-    background-repeat: repeat;
-    background-position: center;
-    background-attachment: fixed;
-    backdrop-filter: blur(10px);
+    background-color: ${({ theme }) => theme.color.gallery};
     font-size: ${({ theme }) => theme.size.medium}px;
     overflow-y: scroll;
     overflow-x: hidden;

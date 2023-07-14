@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Main = styled.main`
-  max-width: 1400px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px 10px 0;
 
@@ -21,8 +21,8 @@ export const Main = styled.main`
       min-height: calc(100vh - 113px);
     `};
 
-  ${({ products }) =>
-    products &&
+  ${({ tasks }) =>
+    tasks &&
     css`
       animation: revealFromLeft 0.4s ease forwards;
     `};

@@ -4,5 +4,5 @@ export default styled.input`
   width: 100%;
   padding: 8px;
   border: 2px solid ${({ theme }) => theme.color.athensGray};
-  line-height: calc(100% + 2px);
+  line-height: 1;
 `;

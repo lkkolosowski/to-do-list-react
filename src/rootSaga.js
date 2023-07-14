@@ -1,6 +1,6 @@
 import { all } from "redux-saga/effects";
-import { productListSaga } from "./features/products/productListSaga";
+import { tasksSaga } from "./features/tasks/tasksSaga";
 
 export default function* rootSaga() {
-  yield all([productListSaga()]);
+  yield all([tasksSaga()]);
 }

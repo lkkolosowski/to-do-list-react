@@ -19,7 +19,7 @@ export const Button = styled.button`
   padding: 4px 0;
   margin: 0;
   border: 0;
-  color: ${({ theme }) => theme.color.royalBlue};
+  color: ${({ theme }) => theme.color.teal};
   background-color: transparent;
   cursor: pointer;
   transition-duration: 0.2s;

@@ -1,4 +1,4 @@
-import { toAuthor, toProducts } from "../../routes";
+import { toAuthor, toTasks } from "../../routes";
 import Container from "../Container";
 import image from "../../images/image.jpg";
 import { NavLink } from "react-router-dom";
@@ -14,10 +14,10 @@ const Navigation = () => {
           </NavLink>
           <List>
             <Item>
-              <StyledNavLink to={toProducts()}>Products</StyledNavLink>
+              <StyledNavLink to={toTasks()}>Zadania</StyledNavLink>
             </Item>
             <Item>
-              <StyledNavLink to={toAuthor()}>About</StyledNavLink>
+              <StyledNavLink to={toAuthor()}>O autorze</StyledNavLink>
             </Item>
           </List>
         </Wrapper>

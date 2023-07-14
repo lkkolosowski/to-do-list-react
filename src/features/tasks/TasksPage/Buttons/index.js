@@ -7,8 +7,8 @@ import {
   setAllDone,
   selectIsEveryTaskDone,
   selectAreTasksNotEmpty,
-} from "../../productListSlice";
-import { ButtonsGroup, Button } from "../Button";
+} from "../../tasksSlice";
+import { ButtonsGroup, Button } from "../Buttons/Button";
 
 const Buttons = () => {
   const hideDone = useSelector(selectHideDone);
